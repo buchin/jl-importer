@@ -1,0 +1,24 @@
+{
+    "name": "buchin/jl-importer",
+    "description": "Import JSON Line into MySQL database",
+    "type": "package",
+    "require-dev": {
+        "kahlan/kahlan": "^3.0"
+    },
+    "license": "Halal",
+    "authors": [
+        {
+            "name": "Mochammad Masbuchin",
+            "email": "buchin@dropsugar.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "gabordemooij/redbean": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buchin\\Jl\\": "src"
+        }
+    }
+}
