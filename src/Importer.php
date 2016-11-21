@@ -61,10 +61,13 @@ class Importer
 
 	public function setR($dsn, $user, $password)
 	{
-		if($dsn == null && $user == null && $password == null){
-			return R::setup();
-		}
+		if(!R::testConnection()){
+			
+			if($dsn == null && $user == null && $password == null){
+				return R::setup();
+			}
 
-		return R::setup($dsn, $user, $password);
+			return R::setup($dsn, $user, $password);
+		}
 	}
 }
