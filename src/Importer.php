@@ -34,6 +34,7 @@ class Importer
 		}
 
 		fclose($file);
+		R::close();
 
 		return true;
 	}
