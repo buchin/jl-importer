@@ -69,5 +69,7 @@ class Importer
 
 			return R::setup($dsn, $user, $password);
 		}
+		
+		return true;
 	}
 }
